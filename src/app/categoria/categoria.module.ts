@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { CategoriaRoutingModule } from './categoria-routing.module';
 import { ListacagetoriasComponent } from './listacagetorias/listacagetorias.component';
+import {MatTableModule} from '@angular/material/table';
+
 
 
 @NgModule({
@@ -11,7 +13,8 @@ import { ListacagetoriasComponent } from './listacagetorias/listacagetorias.comp
   ],
   imports: [
     CommonModule,
-    CategoriaRoutingModule
+    CategoriaRoutingModule,
+    MatTableModule
   ]
 })
 export class CategoriaModule { }
