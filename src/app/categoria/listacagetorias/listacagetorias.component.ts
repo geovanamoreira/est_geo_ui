@@ -15,7 +15,12 @@ export class ListacagetoriasComponent implements OnInit {
     {id: 3, nomecategorias: 'Produtos de Limpeza'},
     {id: 4, nomecategorias: 'Higiêne Pessoal'},
     {id: 5, nomecategorias: 'Açougue'},
-    {id: 2, nomecategorias: 'Bebidas Gaseificadas'}
+    {id: 6, nomecategorias: 'Bebidas Gaseificadas'},
+    {id: 7, nomecategorias: 'Sucos'},
+    {id: 8, nomecategorias: 'Comidas em Conserva (Lata)'},
+    {id: 9, nomecategorias: 'Importados'},
+    {id: 7, nomecategorias: 'Temperos'},
+    {id: 7, nomecategorias: 'Frios'},
     ];
 
   displayedColumns = ['nomecategorias'];
