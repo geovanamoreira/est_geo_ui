@@ -1,17 +1,17 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Categoria } from '../core/model';
+import { Produto } from '../core/model';
 
 @Injectable({
   providedIn: 'root'
 })
-export class CategoriaService {
+export class ProdutosService {
 
-  private readonly API = '/assets/categorias.json';
+  private readonly API = '/assets/produtos.json';
 
   constructor(private http: HttpClient) {}
 
   list() {
-    return this.http.get<Categoria[]>(this.API);
+    return this.http.get<Produto[]>(this.API);
   }
 }

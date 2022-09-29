@@ -1,22 +1,20 @@
 <mat-toolbar color="primary">
 
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+  <button mat-button [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon></button>
 
-    <mat-icon>menu</mat-icon>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item routerLink="/categorias">Categorias</button>
+      <button mat-menu-item routerLink="/produtos">Produtos</button>
+    </mat-menu>
 
-  </button>
+    <span>.: Etec Cidade do Livro :.</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
 
-  <span>.: Estoque :.</span>
-
-  <span class="example-spacer"></span>
-
-  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-    <mat-icon>favorite</mat-icon>
-  </button>
-
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-    <mat-icon>share</mat-icon>
-  </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button>
 </mat-toolbar>
-
 <router-outlet></router-outlet>

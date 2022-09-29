@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Categoria } from '../../core/model';
-import { CategoriaService } from '../categoria.service';
+import { CategoriasService } from '../categorias.service';
 
 @Component({
   selector: 'app-listacagetorias',
@@ -14,8 +14,9 @@ export class ListacagetoriasComponent implements OnInit {
   categorias: Observable<Categoria[]>;
 
   displayedColumns = ['id', 'nomecategorias'];
-  constructor(private categoriaService: CategoriaService) {
-    this.categorias = this.categoriaService.list();
+
+  constructor(private categoriasService: CategoriasService) {
+    this.categorias = this.categoriasService.list();
    }
 
   ngOnInit(): void {

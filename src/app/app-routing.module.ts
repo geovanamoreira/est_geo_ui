@@ -8,12 +8,12 @@ const routes: Routes = [
 
   {
     path: 'categorias',
-    loadChildren: ()=> import('./categoria/categoria.module').then(m => m.CategoriaModule)
+    loadChildren: ()=> import('./categorias/categorias.module').then(m => m.CategoriasModule)
   },
 
   {
     path: 'produtos',
-    loadChildren: ()=> import('./produto/produto.module').then(m => m.ProdutoModule)
+    loadChildren: ()=> import('./produtos/produtos.module').then(m => m.ProdutosModule)
   },
 ];
 
